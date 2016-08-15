@@ -1,0 +1,12 @@
+PROBLEM: manipulate a name and count how long it is
+INPUTS: name
+OUTPUT: name, nameuppercase, namelowercase, namelength
+FORMULAS:
+
+START
+INPUT name
+count how many characters name has and assign result to namelength
+convert name to uppercase and assign result to nameuppercase
+convert name to lowercase and assign result to namelowercase
+OUTPUT to dialog box: name, namelength, nameuppercase, namelowercase
+STOP

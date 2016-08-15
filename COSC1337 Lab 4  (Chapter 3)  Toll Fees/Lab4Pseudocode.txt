@@ -1,0 +1,45 @@
+PROBLEM: calculate toll
+INPUTS: traileraxles, vehicleaxles
+OUTPUTS: traileraxles, vehicleaxles, trailertoll, vehicletoll, totaltoll
+FORMULAS: totaltoll = trailertoll + vehicletoll
+
+START
+INPUT traileraxles
+IF traileraxles = 0
+	trailertoll = 0.00
+END-IF
+IF traileraxles = 1
+	trailertoll = 0.15
+END-IF
+IF traileraxles = 2
+	trailertoll = 0.20
+END-IF
+IF traileraxles = 3 or more
+	trailertoll = 0.25
+END-IF
+INPUT vehicleaxles
+IF vehicleaxles > 2
+	OUTPUT error, must have two or more axles
+	OUTPUT defaulting to 2
+	vehicleaxles = 2
+END-IF
+IF vehicleaxles = 2
+	vehicletoll = 0.25
+END-IF
+IF vehicleaxles = 3
+	vehicletoll = 0.30
+END-IF
+IF vehicleaxles = 4
+	vehicletoll = 0.45
+END-IF
+IF vehicleaxles = 5 or more
+	vehicletoll = 1.00
+END-IF
+CALCULATE totaltoll
+
+OUTPUT vehicleaxles
+OUTPUT traileraxles
+OUTPUT vehicletoll
+OUTPUT trailertoll
+OUTPUT totaltoll
+STOP

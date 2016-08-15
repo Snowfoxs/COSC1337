@@ -1,0 +1,22 @@
+PROBLEM: play a shell game with user
+INPUTS: pickedshell
+OUTPUT: numberwon, numberlost, winnings, totalwinnings
+FORMULAS: winnings = totalwinnings + winnings
+
+START
+set gamenumber to 0
+LOOP until gamenumber = 5
+	INPUT shell number
+	GENERATE random number between 1 and 3
+	IF shell number = random number
+		winnings = 1
+	END-IF
+	IF shell number not equals random number
+		winnings = -2
+	END-IF
+	gamenumber + 1
+	CALCULATE totalwinnings
+END-LOOP
+DISPLAY numberwon
+DISPLAY numberlost
+DISPLAY totalwinnings

@@ -1,0 +1,16 @@
+PROBLEM: calculate total and average tax per acres
+INPUTS: acres, taxrate, value
+OUTPUTS: acres, taxrate, value, totaltax, averagetax
+FORMULAS: totaltax = value * taxrate, averagetax = totaltax / acres
+
+START
+INPUT acres
+OUTPUT acres
+INPUT taxrate
+OUTPUT taxrate
+INPUT value
+OUTPUT value
+CALCULATE totaltax
+CALCULATE averagetax
+OUTPUT to dialog box: acres, taxrate, value, totaltax, averagetax
+STOP

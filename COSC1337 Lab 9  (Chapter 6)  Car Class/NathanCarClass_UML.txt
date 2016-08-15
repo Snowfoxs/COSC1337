@@ -1,0 +1,22 @@
+*************************************************************************************************
+CAR
+*************************************************************************************************
+- make : String 
+- yearModel : int
+- speed : double
+- carDirection : String
+*************************************************************************************************
++ Car(passedYearModel : int, passedMake : String, passedSpeed : int, passedDirection : String)
++ setMake(passedMake : String) : void
++ setYearModel(passedYearModel : int) : void
++ setCarDirection(passedCarDirection : int) : void
++ setSpeed(passedSpeed : int) : void
++ rightTurn() : void
++ leftTurn() : void
++ accelerate() : void
++ brake() : void
++ getYearModel() : int
++ getMake() : String
++ getDirection() : String
++ getSpeed() : int
+*************************************************************************************************

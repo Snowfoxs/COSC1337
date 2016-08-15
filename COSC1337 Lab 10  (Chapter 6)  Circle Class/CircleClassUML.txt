@@ -1,0 +1,15 @@
+Nathan Young
+
+**************************************************
+CIRCLE
+**************************************************
+- radius : double
+**************************************************
++ CircleClass(passedRadius : double)
++ CircleClass()
++ setRadius(passedRadius : double)
++ getRadius() : double
++ getArea() : double
++ getDiameter() : double
++ getCircumference() : double
+**************************************************
